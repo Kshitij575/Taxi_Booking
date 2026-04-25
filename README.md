@@ -6,7 +6,7 @@ A professional, full-stack taxi booking web application built with **React + Vit
 
 ## ✨ Features
 
-### 🧑 Rider Interface (`/`)
+### 🧑 Rider Interface (`/rider`)
 - Book a ride by selecting pickup and drop-off locations on an interactive Leaflet map
 - Live fare estimation with surge pricing multiplier
 - Real-time ride status updates
@@ -18,18 +18,6 @@ A professional, full-stack taxi booking web application built with **React + Vit
 - Surge pricing zone configuration
 - Analytics with **CSV export** support
 - Zone management across the city
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | React 18, React Router v7, Vite, Leaflet / React-Leaflet |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB Atlas (via Mongoose) |
-| **Styling** | Vanilla CSS (dark theme, glassmorphism) |
-| **Other** | dotenv, CORS, json2csv |
 
 ---
 
@@ -62,97 +50,5 @@ hack_taxi/
         └── zones.js            # Zone API endpoints
 ```
 
----
 
-## 🚀 Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) v18+
-- A free [MongoDB Atlas](https://www.mongodb.com/atlas) account
-
----
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/Kshitij575/Taxi_Booking.git
-cd Taxi_Booking
-```
-
----
-
-### 2. Setup the Backend
-
-```bash
-cd server
-npm install
-```
-
-Create a `.env` file inside the `server/` folder:
-
-```env
-MONGODB_URI=your_mongodb_atlas_connection_string
-PORT=4000
-```
-
-Start the backend server:
-
-```bash
-npm run dev
-```
-
-The API will be running at `http://localhost:4000`
-
----
-
-### 3. Setup the Frontend
-
-Open a **new terminal** in the root project folder:
-
-```bash
-npm install
-npm run dev
-```
-
-The app will be running at `http://localhost:5173`
-
----
-
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/health` | Server health check |
-| `GET/POST` | `/api/rides` | Get all rides / Create new ride |
-| `GET/POST` | `/api/drivers` | Get all drivers / Add a driver |
-| `GET/POST` | `/api/zones` | Get all zones / Create a zone |
-| `GET` | `/api/rides/export` | Export rides as CSV |
-
----
-
-## 📸 Screenshots
-
-> Rider booking page with interactive map and fare estimator
-
-> Admin dashboard with driver management and analytics
-
----
-
-## 🔒 Environment Variables
-
-Never commit your `.env` file. It is already excluded via `.gitignore`. Required variables:
-
-| Variable | Description |
-|----------|-------------|
-| `MONGODB_URI` | Your MongoDB Atlas connection string |
-| `PORT` | Port for the Express server (default: `4000`) |
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-<p align="center">Made with ❤️ by <a href="https://github.com/Kshitij575">Kshitij</a></p>
+<p align="center">Made by <a href="https://github.com/Kshitij575">Kshitij</a></p>
